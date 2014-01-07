@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+  <head>
+    <title>seasearch demo</title>
+    <meta charset="utf-8">
+    <meta name="robots" content="none">
+    <style>
+      * { box-sizing: border-box; -moz-box-sizing: border-box; }
+      html, body { background: #fff; }
+      body { font-family: "Helvetica Neue", sans-serif; padding: 15px; }
+      input[type=search] { background: yellow; border: 2px solid #ea2740; font-family: inherit; font-size: 69px; padding: 5px; width: 100%; }
+      .hidden { display: none; }
+      .results { margin-top: 45px; }
+      .results h1 { color: #74c9ef; }
+      .results ol { color: #717782; }
+      .results li + li { margin-top: 30px; }
+      .results pre, .results .score { color: #fff; margin: 0; padding: 15px; }
+      .results .score { background-color: #a5d0e9; font-size: 75%; font-style: normal; }
+      .results .speed { color: #a5d0e9; font-size: 75%; font-weight: 300; }
+      code, pre { color: #333; font-family: Menlo, Monaco, Consolas, "Courier New", monospace; }
+      code { font-size: 90%; overflow-x: auto; padding: 2px 4px; white-space: nowrap; }
+      pre { background: cyan; display: block; word-wrap: break-word; }
+      pre code { padding: 0; white-space: pre-wrap; }
+    </style>
+  </head>
+  <body>
+    <form>
+      <input type="search" name="q" title="" x-inputmode="verbatim" autocapitalize="off" autocomplete="off" autocorrect="off" placeholder="Search for a fruit" autofocus required>
+    </form>
+    <section class="results">
+      <h1></h1>
+      <ol></ol>
+    </section>
+    <script>
+      var worker = new Worker('../lib/worker.js');
+      worker.addEventListener('message', function(e) {
+        var data = e.data;
+        switch (data.type) {
+          case 'loaded':
+            console.log('Loaded');
+            return search();
+          case 'results':
+            console.log('Rendering results');
+            return renderResults(data.data);
+        }
+      });
+
+      $ = function(selector) {
+        return document.querySelector(selector);
+      };
+
+      var form = $('form');
+      var q = $('[name=q]');
+      var results = $('.results');
+      var resultsHeading = $('.results h1');
+      var resultsList = $('.results ol');
+
+      form.addEventListener('keyup', search, false);
+      form.addEventListener('paste', search, false);
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+      }, false);
+
+      function search() {
+        console.log('Queueing search for "' + (q.value || '') + '"');
+        worker.postMessage({
+          type: 'search',
+          data: {
+            query: q.value || '',
+            timeStart: performance.now()
+          }
+        });
+      }
+
+      function renderResults(data) {
+        var html = '';
+        data.results.forEach(function(result) {
+          html += '<li><pre><code>' + JSON.stringify(result.doc, null, 2) +
+                  '</code></pre>';
+          if (result.score) {
+            html += '<div class="score">Score: ' + result.score.toFixed(8) +
+                    '</div>';
+          }
+          html += '</li>';
+        });
+        resultsHeading.innerHTML = data.results.length + ' result' +
+                                   (data.results.length === 1 ? '' : 's');
+        if (data.query) {
+          resultsHeading.innerHTML += ' for &ldquo;' + data.query + '&rdquo;';
+        }
+        var time = (performance.now() - data.timeStart);
+        resultsHeading.innerHTML += ' <span class="speed">(took ' +
+                                    (time / 1000).toFixed(8) +
+                                    's)</span>';
+        resultsList.innerHTML = html;
+      }
+    </script>
+  </body>
+</html>

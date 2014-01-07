@@ -1,0 +1,112 @@
+[
+    {
+        "_id": "1",
+        "description": "A round and oval shaped fruit, which is harvested from lower growing trees found in most of the temperate regions of the world. The fruit has a thin skin that could range in color from shades of green, yellow, and red and much other combination of these. The flesh is generally off-white and cream colored and is very juicy. The generally sweet flavor could be slightly sour, tart, or even a bit bland depending on the variety.",
+        "title": "Apple"
+    },
+    {
+        "_id": "2",
+        "description": "A yellow-orange fruit harvested from small trees has native to China, but are grown in many other regions of the world as well. The fruit resembles a smaller version of a peach and also has many uses. It could be eaten whole with the pit removed, processed into juice and preserves, or could be an ingredient in many recipes. Apricots may be preserved through drying which allows them to be used whenever they are needed. When cooked in liquid, the apricots would absorb some of the liquid and become softer and less chewy.",
+        "title": "Apricot"
+    },
+    {
+        "_id": "3",
+        "description": "A round to pear-shaped fruit with a dark green skin harvested from trees, which are grown in semi-tropical regions, such as Africa, Australia, Caribbean, Indonesia, Israel, Peru, Spain, South America, and also in the U.S. Containing up to 20 grams of fat that is high in monounsaturated, the flesh of the avocado provides a rich buttery flavor when eaten fresh or even added as an ingredient to a variety of foods.",
+        "title": "Avocado"
+    },
+    {
+        "_id": "4",
+        "description": "A banana is an edible fruit produced by several kinds of large herbaceous flowering plants in the genus Musa.",
+        "title": "Banana"
+    },
+    {
+        "_id": "5",
+        "description": "A variety of melon (Cucumis melo var. reticulates) having a tan rind with netlike ridges and the sweet fragrant orange flesh.",
+        "title": "Cantaloupe"
+    },
+    {
+        "_id": "6",
+        "description": "Citrus is a common term and genus of flowering plants in the family Rutaceae, originate in tropical and subtropical Southeast Asia. The plants are great shrubs or small trees, reaching 5-17 m tall, with spiny shoots and alternately prearranged evergreen leaves with an entire margin.",
+        "title": "Citrus"
+    },
+    {
+        "_id": "7",
+        "description": "A soft, sweet, thin-fleshed fruit with carries many small edible seeds. There are over 620 varieties of figs, which could vary in color from white, green, brown, red, and also purple with shapes that range from round to oval. Fig trees are native to Mediterranean regions and Western Asia, but are grown in many other temperate areas as well. Some of the common varieties of figs are normally classified by color in food stores as black, green, and purple figs. However, many fig producers classify their figs simply as green and yellow varieties or also dark varieties.",
+        "title": "Fig"
+    },
+    {
+        "_id": "8",
+        "description": "A tropical Asian evergreen tree (Mangifera indica) cultivated for edible fruit. The ovoid fruit of this tree that having a smooth rind, sweet juicy flesh, and a flat one-seeded stone. It is eaten ripe and pickled when green.",
+        "title": "Mango"
+    },
+    {
+        "_id": "9",
+        "description": "Melon\u2019s nutritional value is 15.00 mg of calcium; 25.00 mg of phosphorus; 0.5 mg iron; 34 mg vitamin C, 640 mg IU Vitamin A; and 0.03 mg of Vitamin B1. The melon has an excellent diuretic properties that can cure kidney disease and extreme eczema disease and acute. When combined with lemon, it can crush the uric acid diseases. So you'll want to eat the melon on a regular basis at least once a day in the morning.",
+        "title": "Melon"
+    },
+    {
+        "_id": "10",
+        "description": "The papaya, other wise known as mambo, tree melon, leeches (Venezuela), or pawpaw is the fruit of the tree Carica papaya, in the genus Carica. It is a very small non-branched tree, the single stem growing to 5-12 m tall, with the spirally arranged leaves confined to the top of the trunk; the lower trunk is conspicuously scarred with the leaf scars of where older leaves and the fruit were borne.",
+        "title": "Papaya"
+    },
+    {
+        "_id": "11",
+        "description": "Passion fruit (Portuguese: maracuj\u00e1; Spanish: maracuy\u00e1) comes from passion flower vines and plants of the genus Pass flora, native to tropical and sub-tropical America. The members of this genus produce good flowers that are extensively cultivated outside their natural range.",
+        "title": "Passion Fruit"
+    },
+    {
+        "_id": "12",
+        "description": "The Peach (Prunes Persia) is actually a tree native to China that bears a juicy fruit of the same name. It is a small deciduous tree growing to 5-12 m tall. The leaves are lanceolate, 7-14 cm long and 2-5 cm broad. The flowers are produced in early spring before the leaves; they are solitary or paired, 2.5-5 cm diameter, pink, with five petals. The fruit is a drupe, with a single large seed encased in hard wood (called the \"stone\" or \"pit\"), yellow and whitish flesh, a delicate aroma, and a velvety skin. Peaches, along with cherries, plums and apricots, are stone fruits (drupes).",
+        "title": "Peach"
+    },
+    {
+        "_id": "13",
+        "description": "Pears are trees of the genus Pyrus and the juicy fruit of that tree, edible in some of the species. The English word pear is from Common West Germanic *pera, probably a loanword of Vulgar Latin pira, the plural of prim that is itself of unknown origin. See also Peor\u00f0. The place name Perry could be indicated the historical presence of pear trees.",
+        "title": "Pear"
+    },
+    {
+        "_id": "14",
+        "description": "The pineapple (Ananas comosus) is a tropical plant and fruit, native to Brazil, Bolivia, and also at Paraguay. The plant is a bromeliad (family Bromeliaceous), a short, herbaceous perennial with 32 or more trough-shaped and pointed leaves 30-120 cm long, surrounding a thick stem. The leaves of the Smooth Cayenne cultivar often lack spines except at the leaf tip, but the Spanish and Queen Cultivars have large spines along the leaf margins.",
+        "title": "Pineapple"
+    },
+    {
+        "_id": "15",
+        "description": "A plum is a stone fruit tree in the genus Prunes and subgenus Prunes. The subgenus is distinguished from few other subgenera (peaches, cherries, bird cherries, etc) in the shoots having a terminal bud and the side buds solitary (not clustered), the flowers being grouped 1-4 together on short stems, and the fruit having a groove running down one side, and a smooth stone.",
+        "title": "Plum"
+    },
+    {
+        "_id": "16",
+        "description": "In botany, a Pome (after the French name for an apple: Pome) is a varieties of fruit produced by the flowering plants in the Subfamily Melodeon of the Family Rosaceous. A Pome is an accessory fruit composed of five and more carpals in which the Exocarp forms an inconspicuous layer, the Mesocarp is normally fleshy, and the endocarp forms a leathery case around the seed.",
+        "title": "Pome Fruits"
+    },
+    {
+        "_id": "17",
+        "description": "The Pomegranate, Punica granite, is a species of fruit-bearing deciduous shrub and very small tree growing to 5-9 m tall. The pomegranate is believed to have its originated in the area from eastern Iran (Persia) to northern India, but its true native range is not actually known because of its extensive cultivation.",
+        "title": "Pomegranate"
+    },
+    {
+        "_id": "18",
+        "description": "Any of more than 126 varieties of fruit, most grown for drying. Four of the most common varieties are French, Imperial, Italian, and also has Green Gage. Prunes are cultivars of plum species (mostly Prunes domestic). In general, prunes are freestone cultivars (the stone is easy to remove), whereas plums that are cling (the stone is more difficult to remove). Dried fruit of the prune tree were traditionally called \"dried prunes\" or \"prunes,\" but with an effort is currently underway to market them as \"dried plums.\" Fresh prunes reach the market earlier than fresh plums and which are usually smaller in size. Prune juice is more fiber-rich than other plum juice and is often marketed as a way to increase regularity.",
+        "title": "Prune"
+    },
+    {
+        "_id": "19",
+        "description": "Pomelo is the largest of all the citrus fruits; it is native to Southeast Asian countries. Pomelo can grow as massive as 30cm in diameter & weigh up to 25 pounds. The pulp color varies from pale yellow to pink & red. The rind is thick but soft & simple to peel away. Pommel has sweet & sour taste but the membranes of the segments are bitter & usually discarded.",
+        "title": "Pomelo"
+    },
+    {
+        "_id": "20",
+        "description": "The Raspberry or Red Raspberry, (Rubus Idaeus) is the plant that produces a tart, sweet, red composite fruit in the late summer and early autumn. In proper botanical language, it is not a berry at all, but instead an aggregate fruit of numerous drupelets around the central core.",
+        "title": "Raspberry"
+    },
+    {
+        "_id": "21",
+        "description": "The strawberry (Fragaria) is called as genus of plants in the family Rosaceous, and the fruit of these plants. There are more than 22 named species and many hybrids and cultivars. The most common strawberries are grown commercially are cultivars of the Garden strawberry, a Fragaria \u00d7 ananassa hybrid. Strawberries are a valuable source of vitamin C.",
+        "title": "Strawberry"
+    },
+    {
+        "_id": "22",
+        "description": "Watermelon is a vine-like flowering plant originally from southern Africa. Its fruit, which is also called watermelon, is a special kind referred to by botanists as a pepo, a berry which has a thick rind and fleshy center.",
+        "title": "Watermelon"
+    }
+]
