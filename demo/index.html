@@ -32,17 +32,19 @@
       <ol></ol>
     </section>
     <script>
+      function log() {
+        console.log(Array.prototype.slice.call(arguments, 0).join(' '));
+      }
+
+      var methods = {
+        'log': log,
+        'loaded': search,
+        'results': renderResults
+      };
+
       var worker = new Worker('../lib/worker.js');
       worker.addEventListener('message', function(e) {
-        var data = e.data;
-        switch (data.type) {
-          case 'loaded':
-            console.log('Loaded');
-            return search();
-          case 'results':
-            console.log('Rendering results');
-            return renderResults(data.data);
-        }
+        methods[e.data.type](e.data.data);
       });
 
       $ = function(selector) {
@@ -73,6 +75,7 @@
       }
 
       function renderResults(data) {
+        console.log('Rendering results');
         var html = '';
         data.results.forEach(function(result) {
           html += '<li><pre><code>' + JSON.stringify(result.doc, null, 2) +
